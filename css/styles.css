@@ -191,7 +191,7 @@ img {
 /* Герой */
 .hero {
   padding-top: 200px;
-  padding-bottom: 280px;
+  padding-bottom: 200px;
   background: var(--accent-bg-color);
   color: var(--accent-text-color);
   text-align: center;
