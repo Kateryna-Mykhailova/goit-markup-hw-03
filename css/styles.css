@@ -230,19 +230,19 @@ img {
 }
 
 .features-list {
-  display: inline-flex;
-  /* flex-wrap: wrap; */
-  /* margin-right: -30px; */
+  /* display: inline-flex; */
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px;
+  padding: 0px;
+  margin-top: -30px;
+  margin-left: -30px;
 }
 .features-list .item {
-  /* flex-basis: calc((100% - 90px) / 4); */
-  width: 270px;
-  /* margin-bottom: 0px; */
-  /* margin-right: 30px; */
-}
-
-.features-list .item:not(:last-child) {
-  margin-right: 30px;
+  /* width: 270px; */
+  margin-top: 30px;
+  margin-left: 30px;
+  flex-basis: calc((100% - 30px * 4) / 4);
 }
 
 .features-title {
@@ -260,36 +260,45 @@ img {
 
 /* Чем мы занимаемся */
 .work-list {
-  display: inline-flex;
-  /* flex-wrap: wrap; */
-  /* margin-right: -30px; */
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px;
+  padding: 0px;
+  margin-top: -30px;
+  margin-left: -30px;
 }
 .work-list .item {
-  /* flex-basis: calc((100% - 60px) / 3); */
-  width: 370px;
+  flex-basis: calc((100% - 30px * 3) / 3);
+  margin-top: 30px;
+  margin-left: 30px;
+  /* width: 370px; */
 }
-.work-list .item:not(:last-child) {
-  margin-right: 30px;
-}
-
 /* Наша команда */
-.team {
+
+.section-team {
   background: var(--secondary-btn-bg);
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
 .team-list {
-  display: inline-flex;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px;
+  padding: 0px;
+  margin-top: -30px;
+  margin-left: -30px;
 }
-
 .team-list .item {
-  width: 270px;
+  flex-basis: calc((100% - 30px * 4) / 4);
+  margin-top: 30px;
+  margin-left: 30px;
+  /* width: 270px; */
   text-align: center;
 }
-.team-list .item:not(:last-child) {
+/* .team-list .item:not(:last-child) {
   margin-right: 30px;
-}
+} */
 .team-description {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -346,7 +355,6 @@ img {
 /* portfolio page */
 /* Фильтры */
 .filter-section {
-  padding-top: 94px;
   padding-bottom: 50px;
 }
 
@@ -368,10 +376,18 @@ img {
   margin-top: calc(-1 * var(--card-set-gap));
 }
 .projects-list .item {
-  /* flex-basis: calc((100% - 30px) / 3); */
+  /* flex-basis: calc((100% - 30px * 3) / 3); */
   flex-basis: calc(100% / 3 - var(--card-set-gap));
   margin-left: var(--card-set-gap);
   margin-top: var(--card-set-gap);
+}
+
+.projects-description {
+  padding: 20px 24px 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  background: #ffffff;
 }
 /* .projects-list .item:nth-child(3n) {
   margin-right: 0px;
@@ -381,6 +397,7 @@ img {
   margin-bottom: 0px;
 } */
 .projects-title {
+  margin-bottom: 4px;
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
