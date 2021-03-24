@@ -44,7 +44,6 @@ body {
   font-size: 14px;
   line-height: 1.7;
   color: var(--primari-text-color);
-  background: var(--main-bg-color);
   letter-spacing: 0.03em;
 }
 
@@ -184,7 +183,6 @@ img {
   line-height: 1.16;
   text-align: center;
   color: var(--title-text-color);
-  /* margin-top: 0px; */
   margin-bottom: 50px;
 }
 
@@ -208,12 +206,8 @@ img {
 }
 /* Преимущества */
 
-.main-content {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 .section-features {
-  margin-bottom: 94px;
+  padding-top: 94px;
 }
 
 .features-list {
@@ -240,6 +234,10 @@ img {
 }
 
 /* Чем мы занимаемся */
+.section-work {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .work-list {
   display: flex;
   flex-wrap: wrap;
@@ -336,12 +334,14 @@ img {
 /* portfolio page */
 /* Фильтры */
 .filter-section {
-  padding-bottom: 50px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .projects-filter {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .projects-filter .item:not(:last-child) {
